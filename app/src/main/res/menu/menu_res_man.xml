@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:title="Cashier"
+        android:id="@+id/action_cashier"
+        app:showAsAction="never"
+        android:orderInCategory="10"
+        />
+
+    <item
+        android:title="Material"
+        android:id="@+id/action_material"
+        app:showAsAction="never"
+        android:orderInCategory="20"
+        />
+
+    <item
+        android:title="Add Table"
+        android:id="@+id/action_add_table"
+        app:showAsAction="never"
+        android:orderInCategory="200"
+        />
+
+    <item
+        android:title="Add Food"
+        android:id="@+id/action_add_food"
+        app:showAsAction="never"
+        android:orderInCategory="300"
+        />
+
+    <item
+
+        android:title="Log out"
+        android:id="@+id/action_logout"
+        app:showAsAction="never"
+        android:orderInCategory="600"
+        />
+    <item
+        android:title="Log out2"
+        android:id="@+id/action_logout2"
+        app:showAsAction="never"
+        android:orderInCategory="700"
+        />
+
+</menu>

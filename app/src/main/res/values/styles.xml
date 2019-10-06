@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme.
+
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+    <item name="colorPrimaryLight">?attr/colorPrimary</item>
+        <item name="colorSecondary">?attr/colorPrimary</item>
+        <item name="colorSecondaryLight">?attr/colorPrimaryLight</item>
+        <item name="colorSecondaryDark">?attr/colorPrimaryDark</item>
+        <item name="scrimBackground">@color/mtrl_scrim_color</item>
+        <item name="snackbarButtonStyle">?attr/borderlessButtonStyle</item>
+    -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

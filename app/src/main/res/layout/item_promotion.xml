@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:layout_marginBottom="0.5dp"
+    android:layout_marginLeft="0.5dp"
+    android:elevation="4dp">
+
+    <TextView
+        android:id="@+id/tv_item_food_day_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:maxLines="2"
+        android:text="Món 1 Món 1 Món 1 Món 1 "
+         />
+
+    <TextView
+        android:id="@+id/tv_item_food_day_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_item_food_day_name"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:text="0" />
+
+</RelativeLayout>

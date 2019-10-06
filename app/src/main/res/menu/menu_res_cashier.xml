@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_hash"
+        android:orderInCategory="400"
+        android:title="HashMap"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_report"
+        android:orderInCategory="400"
+        android:title="Báo cáo kinh doanh"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_food_report"
+        android:orderInCategory="500"
+        android:title="Báo cáo hàng bán"
+        app:showAsAction="never" />
+
+    <item
+
+        android:title="Log out"
+        android:id="@+id/action_logout"
+        app:showAsAction="never"
+        android:orderInCategory="600"
+        />
+
+</menu>

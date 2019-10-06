@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:title="Nhập/xuất nguyên liệu"
+        android:id="@+id/action_in_out_mtr"
+        app:showAsAction="never"
+        android:orderInCategory="10"
+        />
+
+    <item
+        android:title="Đặt hạn mức cảnh báo"
+        android:id="@+id/action_limit_mtr"
+        app:showAsAction="never"
+        android:orderInCategory="40"
+        />
+</menu>
