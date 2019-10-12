@@ -4,6 +4,13 @@
 
 
     <item
+        android:title="Chat Box"
+        android:id="@+id/action_chatbox"
+        app:showAsAction="never"
+        android:orderInCategory="5"
+        />
+
+    <item
         android:title="Cashier"
         android:id="@+id/action_cashier"
         app:showAsAction="never"
@@ -29,6 +36,14 @@
         android:id="@+id/action_add_food"
         app:showAsAction="never"
         android:orderInCategory="300"
+        />
+
+    <item
+
+        android:title="Text"
+        android:id="@+id/action_text"
+        app:showAsAction="never"
+        android:orderInCategory="500"
         />
 
     <item

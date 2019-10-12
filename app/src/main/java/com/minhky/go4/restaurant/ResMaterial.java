@@ -108,10 +108,6 @@ public class ResMaterial extends AppCompatActivity {
                 viewHolder.unit.setText(model.getMtrUnit());
                 viewHolder.amount.setText(model.getMtrAmount());
 
-
-
-
-
             }
         };
         mtrList.setAdapter(adapterFirebaseListMaterial);

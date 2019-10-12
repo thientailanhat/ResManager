@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">GoingMeal</string>
-        <!-- Login -->
+    <!-- Login -->
     <string name="login_facebook">Đăng nhập bằng Facebook</string>
     <string name="hint_enter_email">Nhập email</string>
     <string name="hint_enter_password">Nhập mật mã</string>
@@ -99,6 +99,8 @@
     <string name="title_activity_res_material">ResMaterial</string>
     <string name="title_activity_main">MainActivity</string>
 
+    <string name="title_activity_text">TextActivity</string>
+
     <string-array name="food_element">
         <item>Chọn thành phần món</item>
         <item>Bún</item>
@@ -108,7 +110,6 @@
 
 
     </string-array>
-
     <string-array name="promotion_array">
         <item>1 tặng 1</item>
         <item>2 tặng 1</item>

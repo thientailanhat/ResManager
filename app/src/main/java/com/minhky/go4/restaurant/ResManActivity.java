@@ -169,6 +169,7 @@ public class ResManActivity extends AppCompatActivity {
             public TableViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
                 if(viewType==TABLE_ACTIVE){
                     View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_table_active,parent,false);
+
                     return new TableViewHolder(v);
 
                 }else{
@@ -993,6 +994,12 @@ public class ResManActivity extends AppCompatActivity {
         if (id == R.id.action_logout) {
             FirebaseAuth.getInstance().signOut();
             startActivity(new Intent(this, LoginActivity.class));
+        }
+        if (id == R.id.action_text) {
+            startActivity(new Intent(this, TextActivity.class));
+        }
+        if (id == R.id.action_chatbox) {
+            startActivity(new Intent(this, ChatBoxActivity.class));
         }
          return super.onOptionsItemSelected(item);
 

@@ -14,6 +14,8 @@
     <color name="colorAccent">#0b95ff</color>
     <color name="colorAccentDark">#51b107</color>
     <color name="colorAccentLight">#aefa74</color>
+    <color name="gray">#D8D8D8</color>
+
 
 
 </resources>

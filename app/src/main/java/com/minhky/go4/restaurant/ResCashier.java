@@ -239,40 +239,6 @@ public class ResCashier extends AppCompatActivity {
         adapterFirebase.notifyDataSetChanged();
     }
 
-    private class TableViewHolder extends RecyclerView.ViewHolder {
-        TextView name;
-
-        public TableViewHolder(View itemView) {
-            super(itemView);
-            name = itemView.findViewById(R.id.tv_item_table_name);
-
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    view.startAnimation(Constant.buttonClick);
-                    int position = getLayoutPosition();
-                    Table table = adapterFirebase.getItem(position);
-                    tableName = table.getTableName();
-                    refOrder.addListenerForSingleValueEvent(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(DataSnapshot dataSnapshot) {
-                            if(dataSnapshot.hasChild("Order "+tableName)){
-                                viewBillDialog();
-                            }else{
-                                Toast.makeText(getApplicationContext(),"Bàn không có khách!",Toast.LENGTH_LONG).show();
-                            }
-                        }
-
-                        @Override
-                        public void onCancelled(DatabaseError databaseError) {
-
-                        }
-                    });
-                }
-            });
-
-        }
-    }
 
     private void viewBillDialog() {
 
@@ -700,17 +666,6 @@ public class ResCashier extends AppCompatActivity {
         });
 
     }
-    private class FoodBillViewHolder extends RecyclerView.ViewHolder {
-        TextView name,price,quantity,total;
-        public FoodBillViewHolder(View itemView) {
-            super(itemView);
-            name = itemView.findViewById(R.id.tv_item_cart_name);
-            quantity = itemView.findViewById(R.id.tv_item_cart_quantity);
-            total = itemView.findViewById(R.id.tv_item_cart_total);
-            price = itemView.findViewById(R.id.tv_item_cart_price);
-
-        }
-    }
 
     private void billList(String date) {
         billList.setHasFixedSize(false);
@@ -752,6 +707,52 @@ public class ResCashier extends AppCompatActivity {
         adapterFoodSale.notifyDataSetChanged();
     }
 
+
+    private class TableViewHolder extends RecyclerView.ViewHolder {
+        TextView name;
+
+        public TableViewHolder(View itemView) {
+            super(itemView);
+            name = itemView.findViewById(R.id.tv_item_table_name);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    view.startAnimation(Constant.buttonClick);
+                    int position = getLayoutPosition();
+                    Table table = adapterFirebase.getItem(position);
+                    tableName = table.getTableName();
+                    refOrder.addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(DataSnapshot dataSnapshot) {
+                            if(dataSnapshot.hasChild("Order "+tableName)){
+                                viewBillDialog();
+                            }else{
+                                Toast.makeText(getApplicationContext(),"Bàn không có khách!",Toast.LENGTH_LONG).show();
+                            }
+                        }
+
+                        @Override
+                        public void onCancelled(DatabaseError databaseError) {
+
+                        }
+                    });
+                }
+            });
+
+        }
+    }
+    private class FoodBillViewHolder extends RecyclerView.ViewHolder {
+        TextView name,price,quantity,total;
+        public FoodBillViewHolder(View itemView) {
+            super(itemView);
+            name = itemView.findViewById(R.id.tv_item_cart_name);
+            quantity = itemView.findViewById(R.id.tv_item_cart_quantity);
+            total = itemView.findViewById(R.id.tv_item_cart_total);
+            price = itemView.findViewById(R.id.tv_item_cart_price);
+
+        }
+    }
     private class BillViewHolder extends RecyclerView.ViewHolder {
         TextView time,value;
 

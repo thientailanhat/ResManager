@@ -11,6 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".restaurant.ChatBoxActivity"></activity>
+        <activity
+            android:name=".restaurant.TextActivity"
+            android:label="@string/title_activity_text"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".restaurant.ResMaterial"
             android:label="@string/title_activity_res_material"
